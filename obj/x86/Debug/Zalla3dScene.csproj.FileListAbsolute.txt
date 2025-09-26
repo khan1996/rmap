@@ -1,0 +1,8 @@
+E:\myProj\VS2005\rMap\Zalla3dScene\bin\x86\Debug\DevIL.dll
+E:\myProj\VS2005\rMap\Zalla3dScene\bin\x86\Debug\Zalla3dScene.dll
+E:\myProj\VS2005\rMap\Zalla3dScene\bin\x86\Debug\Zalla3dScene.pdb
+E:\myProj\VS2005\rMap\Zalla3dScene\bin\x86\Debug\Tao.DevIl.dll
+E:\myProj\VS2005\rMap\Zalla3dScene\bin\x86\Debug\Tao.DevIl.xml
+E:\myProj\VS2005\rMap\Zalla3dScene\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\myProj\VS2005\rMap\Zalla3dScene\obj\x86\Debug\Zalla3dScene.dll
+E:\myProj\VS2005\rMap\Zalla3dScene\obj\x86\Debug\Zalla3dScene.pdb

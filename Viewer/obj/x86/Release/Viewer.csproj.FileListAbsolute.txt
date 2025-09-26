@@ -1,0 +1,10 @@
+E:\myProj\VS2005\rMap\Viewer\bin\x86\Release\Viewer.dll
+E:\myProj\VS2005\rMap\Viewer\bin\x86\Release\Viewer.pdb
+E:\myProj\VS2005\rMap\Viewer\obj\x86\Release\ResolveAssemblyReference.cache
+E:\myProj\VS2005\rMap\Viewer\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\myProj\VS2005\rMap\Viewer\obj\x86\Release\Viewer.dll
+E:\myProj\VS2005\rMap\Viewer\obj\x86\Release\Viewer.pdb
+E:\myProj\VS2k10\rMap\Viewer\bin\x86\Release\Viewer.dll
+E:\myProj\VS2k10\rMap\Viewer\obj\x86\Release\ResolveAssemblyReference.cache
+E:\myProj\VS2k10\rMap\Viewer\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\myProj\VS2k10\rMap\Viewer\obj\x86\Release\Viewer.dll
