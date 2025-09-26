@@ -1,0 +1,12 @@
+E:\myProj\VS2005\r3s_to_3ds\obj\Debug\ResolveAssemblyReference.cache
+E:\myProj\VS2005\r3s_to_3ds\bin\Debug\r3s_to_3ds.exe
+E:\myProj\VS2005\r3s_to_3ds\bin\Debug\r3s_to_3ds.pdb
+E:\myProj\VS2005\r3s_to_3ds\obj\Debug\r3s_to_3ds.exe
+E:\myProj\VS2005\r3s_to_3ds\obj\Debug\r3s_to_3ds.pdb
+E:\myProj\ROW\rMap\r3s_to_3ds\obj\Debug\r3s_to_3ds.exe
+E:\myProj\ROW\rMap\r3s_to_3ds\obj\Debug\r3s_to_3ds.pdb
+E:\myProj\ROW\rMap\r3s_to_3ds\bin\Debug\r3s_to_3ds.exe
+E:\myProj\ROW\rMap\r3s_to_3ds\bin\Debug\r3s_to_3ds.pdb
+E:\myProj\ROW\rMap\r3s_to_3ds\obj\Debug\ResolveAssemblyReference.cache
+E:\myProj\VS2005\rMap\r3s_to_3ds\obj\Debug\r3s_to_3ds.exe
+E:\myProj\VS2005\rMap\r3s_to_3ds\obj\Debug\r3s_to_3ds.pdb

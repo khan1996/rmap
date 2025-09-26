@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="r3s_to_3ds">
+</Property><Property Name="Solution File" Value="E:\myProj\VS2005\rMap\r3s_to_3ds\r3s_to_3ds.sln">
+</Property><Property Name="Date" Value="6. september 2011. a.">
+</Property><Property Name="Time" Value="18:25">
+</Property></Properties><Event ErrorLevel="0" Project="r3s_to_3ds" Source="r3s_to_3ds.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="r3s_to_3ds" Source="r3s_to_3ds.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="r3s_to_3ds.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="r3s_to_3ds.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="r3s_to_3ds" Source="r3s_to_3ds.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
