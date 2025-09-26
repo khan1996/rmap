@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AED5C0EA-2C3E-4A7F-A8EB-11CAE37CB7E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rMap</RootNamespace>
+    <AssemblyName>rMap</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\Connect.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.DevIl, Version=1.6.8.3, Culture=neutral, PublicKeyToken=7ec4053013524957, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\taoframework-2.1.0\bin\Tao.DevIl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asset\Animation\AniController.cs" />
+    <Compile Include="Asset\Animation\AniControllerPack.cs" />
+    <Compile Include="Asset\Animation\AniPosKey.cs" />
+    <Compile Include="Asset\Animation\AniRotKey.cs" />
+    <Compile Include="Asset\Animation\AniScaleKey.cs" />
+    <Compile Include="Asset\Animation\SkeletonPart.cs" />
+    <Compile Include="Asset\DDSLib.cs" />
+    <Compile Include="Asset\DrawableModel.cs" />
+    <Compile Include="Asset\FileTypes\AniKeyPack.cs" />
+    <Compile Include="Asset\FileTypes\AttachmentMesh.cs" />
+    <Compile Include="Asset\FileTypes\Collada.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Curves\Grendgine_Collada_Circle.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Curves\Grendgine_Collada_Curve.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Curves\Grendgine_Collada_Curves.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Curves\Grendgine_Collada_Ellipse.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Curves\Grendgine_Collada_Hyperbola.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Curves\Grendgine_Collada_Line.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Curves\Grendgine_Collada_Nurbs.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Curves\Grendgine_Collada_Parabola.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Curves\Grendgine_Collada_Surface_Curves.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Geometry\Grendgine_Collada_B_Rep.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Surfaces\Grendgine_Collada_Cone.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Surfaces\Grendgine_Collada_Cylinder_B_Rep.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Surfaces\Grendgine_Collada_Nurbs_Surface.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Surfaces\Grendgine_Collada_Surface.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Surfaces\Grendgine_Collada_Surfaces.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Surfaces\Grendgine_Collada_Swept_Surface.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Surfaces\Grendgine_Collada_Torus.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Topology\Grendgine_Collada_Edges.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Topology\Grendgine_Collada_Faces.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Topology\Grendgine_Collada_PCurves.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Topology\Grendgine_Collada_Shells.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Topology\Grendgine_Collada_Solids.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Topology\Grendgine_Collada_Wires.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Transformation\Grendgine_Collada_Orient.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_B_Rep\Transformation\Grendgine_Collada_Origin.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Animation\Grendgine_Collada_Animation.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Animation\Grendgine_Collada_Animation_Clip.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Animation\Grendgine_Collada_Channel.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Animation\Grendgine_Collada_Instance_Animation.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Animation\Grendgine_Collada_Library_Animations.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Animation\Grendgine_Collada_Library_Animation_Clips.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Animation\Grendgine_Collada_Sampler.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Camera\Grendgine_Collada_Camera.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Camera\Grendgine_Collada_Imager.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Camera\Grendgine_Collada_Instance_Camera.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Camera\Grendgine_Collada_Library_Cameras.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Camera\Grendgine_Collada_Optics.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Camera\Grendgine_Collada_Orthographic.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Camera\Grendgine_Collada_Perspective.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Controller\Grendgine_Collada_Controller.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Controller\Grendgine_Collada_Instance_Controller.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Controller\Grendgine_Collada_Joints.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Controller\Grendgine_Collada_Library_Controllers.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Controller\Grendgine_Collada_Morph.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Controller\Grendgine_Collada_Skeleton.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Controller\Grendgine_Collada_Skin.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Controller\Grendgine_Collada_Targets.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Controller\Grendgine_Collada_Vertex_Weights.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Custom_Types\Grendgine_Collada_Geographic_Location_Altitude.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Custom_Types\Grendgine_Collada_Poly_PH.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_Accessor.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_Bool_Array.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_Float_Array.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_IDREF_Array.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_Input_Shared.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_Input_Unshared.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_Int_Array.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_Name_Array.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_SIDREF_Array.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_Source.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Data_Flow\Grendgine_Collada_Token_Array.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Extensibility\Grendgine_Collada_Extra.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Extensibility\Grendgine_Collada_Technique.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Extensibility\Grendgine_Collada_Technique_Common.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Control_Vertices.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Geometry.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Geometry_Common_Fields.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Instance_Geometry.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Library_Geometries.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Lines.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Linestrips.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Mesh.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Polygons.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Polylist.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Spline.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Triangles.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Trifans.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Tristrips.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Geometry\Grendgine_Collada_Vertices.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Lighting\Grendgine_Collada_Ambient.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Lighting\Grendgine_Collada_Color.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Lighting\Grendgine_Collada_Directional.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Lighting\Grendgine_Collada_Instance_Light.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Lighting\Grendgine_Collada_Library_Lights.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Lighting\Grendgine_Collada_Light.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Lighting\Grendgine_Collada_Point.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Lighting\Grendgine_Collada_Spot.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Mathematics\Grendgine_Collada_Formula.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Mathematics\Grendgine_Collada_Instance_Formula.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Mathematics\Grendgine_Collada_Library_Formulas.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Metadata\Grendgine_Collada_Asset.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Metadata\Grendgine_Collada_Asset_Contributor.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Metadata\Grendgine_Collada_Asset_Coverage.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Metadata\Grendgine_Collada_Asset_Unit.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Metadata\Grendgine_Collada_Geographic_Location.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Parameters\Grendgine_Collada_New_Param.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Parameters\Grendgine_Collada_Param.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Parameters\Grendgine_Collada_Set_Param.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Scene\Grendgine_Collada_Evaluate_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Scene\Grendgine_Collada_Instance_Node.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Scene\Grendgine_Collada_Instance_Visual_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Scene\Grendgine_Collada_Library_Nodes.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Scene\Grendgine_Collada_Library_Visual_Scenes.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Scene\Grendgine_Collada_Node.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Scene\Grendgine_Collada_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Scene\Grendgine_Collada_Visual_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Technique_Common\Grendgine_Collada_Technique_Common_Formula.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Technique_Common\Grendgine_Collada_Technique_Common_Light.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Technique_Common\Grendgine_Collada_Technique_Common_Optics.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Technique_Common\Grendgine_Collada_Technique_Common_Source.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Transform\Grendgine_Collada_Lookat.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Transform\Grendgine_Collada_Matrix.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Transform\Grendgine_Collada_Rotate.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Transform\Grendgine_Collada_Scale.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Transform\Grendgine_Collada_Skew.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Core\Transform\Grendgine_Collada_Translate.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Array_Length.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Constant_Attribute.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Format_Hint.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Hex.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Mips_Attribute.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Ref_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Renderable_Share.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Size_2D.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Size_3D.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Size_Ratio.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Size_Width_Only.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Technique_Override.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_TexCoord_Semantic.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Custom_Types\Grendgine_Collada_Texture.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Effects\Grendgine_Collada_Annotate.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Effects\Grendgine_Collada_Bind_Vertex_Input.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Effects\Grendgine_Collada_Effect.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Effects\Grendgine_Collada_Effect_Technique.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Effects\Grendgine_Collada_Instance_Effect.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Effects\Grendgine_Collada_Library_Effects.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Effects\Grendgine_Collada_Technique_Hint.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Materials\Grendgine_Collada_Bind_FX.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Materials\Grendgine_Collada_Bind_Material.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Materials\Grendgine_Collada_Instance_Material_Geometry.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Materials\Grendgine_Collada_Library_Materials.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Materials\Grendgine_Collada_Material.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Parameters\Grendgine_Collada_Array.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Parameters\Grendgine_Collada_Modifier.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Parameters\Grendgine_Collada_Sampler_Image.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Parameters\Grendgine_Collada_Sampler_States.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Parameters\Grendgine_Collada_Semantic.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Parameters\Grendgine_Collada_UserType.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\BRIDGE\Grendgine_Collada_Profile_BRIDGE.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\CG\Grendgine_Collada_Pass_CG.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\CG\Grendgine_Collada_Profile_CG.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\CG\Grendgine_Collada_Program_CG.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\CG\Grendgine_Collada_Shader_CG.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\CG\Grendgine_Collada_Technique_CG.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\COMMON\Grendgine_Collada_Effect_Technique_COMMON.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\COMMON\Grendgine_Collada_Profile_COMMON.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLES2\Grendgine_Collada_Pass_GLES2.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLES2\Grendgine_Collada_Profile_GLES2.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLES2\Grendgine_Collada_Program_GLES2.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLES2\Grendgine_Collada_Shader_GLES2.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLES2\Grendgine_Collada_Technique_GLES2.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLES\Grendgine_Collada_Pass_GLES.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLES\Grendgine_Collada_Profile_GLES.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLES\Grendgine_Collada_Technique_GLES.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLSL\Grendgine_Collada_Pass_GLSL.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLSL\Grendgine_Collada_Profile_GLSL.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLSL\Grendgine_Collada_Program_GLSL.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLSL\Grendgine_Collada_Shader_GLSL.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\GLSL\Grendgine_Collada_Technique_GLSL.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Profiles\Grendgine_Collada_Profile.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Blinn.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Color_Clear.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Color_Target.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Constant.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Depth_Clear.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Depth_Target.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Draw.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Evaluate.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_FX_Common_Color_Or_Texture_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_FX_Common_Float_Or_Param_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Instance_Material_Rendering.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Lambert.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Pass.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Phong.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Render.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_States.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Stencil_Clear.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Rendering\Grendgine_Collada_Stencil_Target.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Shaders\Grendgine_Collada_Binary.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Shaders\Grendgine_Collada_Bind_Attribute.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Shaders\Grendgine_Collada_Bind_Uniform.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Shaders\Grendgine_Collada_Code.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Shaders\Grendgine_Collada_Compiler.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Shaders\Grendgine_Collada_Include.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Shaders\Grendgine_Collada_Linker.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Shaders\Grendgine_Collada_Shader.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Shaders\Grendgine_Collada_Shader_Sources.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Technique_Common\Grendgine_Collada_Technique_Common_Bind_Material.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Alpha.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Argument_Alpha.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Argument_RGB.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Create_2D.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Create_3D.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Create_Cube.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Format.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_FX_Sampler_Common.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Image.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Init_From.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Instance_Image.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Library_Images.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_RGB.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Sampler1D.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Sampler2D.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Sampler3D.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_SamplerCUBE.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_SamplerDEPTH.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_SamplerRECT.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_TexCombiner.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_TexEnv.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_FX\Texturing\Grendgine_Collada_Texture_Pipeline.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Helpers\Grendgine_Collada_Bool_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Helpers\Grendgine_Collada_Common_Float2_Or_Param_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Helpers\Grendgine_Collada_Float_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Helpers\Grendgine_Collada_Int_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Helpers\Grendgine_Collada_Parse_Utils.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Helpers\Grendgine_Collada_SID_Float_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Helpers\Grendgine_Collada_SID_Int_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Helpers\Grendgine_Collada_String_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Articulated_System.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Axis_Info.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Bind.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Connect_Param.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Effector_Info.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Frame_Object.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Frame_Origin.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Frame_TCP.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Frame_Tip.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Instance_Articulated_System.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Kinematics.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Library_Articulated_Systems.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Articulated_Systems\Grendgine_Collada_Motion.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Custom_Types\Grendgine_Collada_Axis_Info_Kinematics.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Custom_Types\Grendgine_Collada_Axis_Info_Motion.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Custom_Types\Grendgine_Collada_Kinematics_Axis_Info_Index.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Custom_Types\Grendgine_Collada_Kinematics_Axis_Info_Limits.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Custom_Types\Grendgine_Collada_Kinematics_Limits.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Joints\Grendgine_Collada_Joint.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Joints\Grendgine_Collada_Library_Joints.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Joints\Grendgine_Collada_Prismatic.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Joints\Grendgine_Collada_Revolute.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Models\Grendgine_Collada_Attachment_End.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Models\Grendgine_Collada_Attachment_Full.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Models\Grendgine_Collada_Attachment_Start.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Models\Grendgine_Collada_Instance_Joint.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Models\Grendgine_Collada_Instance_Kinematics_Model.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Models\Grendgine_Collada_Kinematics_Model.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Models\Grendgine_Collada_Library_Kinematics_Models.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Models\Grendgine_Collada_Link.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Scenes\Grendgine_Collada_Bind_Joint_Axis.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Scenes\Grendgine_Collada_Bind_Kinematics_Model.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Scenes\Grendgine_Collada_Instance_Kinematics_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Scenes\Grendgine_Collada_Kinematics_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Kinematics_Scenes\Grendgine_Collada_Library_Kinematics_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Technique_Common\Grendgine_Collada_Technique_Common_Kinematics.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Technique_Common\Grendgine_Collada_Technique_Common_Kinematics_Model.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Kinematics\Technique_Common\Grendgine_Collada_Technique_Common_Motion.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Analytical_Shape\Grendgine_Collada_Box.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Analytical_Shape\Grendgine_Collada_Capsule.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Analytical_Shape\Grendgine_Collada_Convex_Mesh.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Analytical_Shape\Grendgine_Collada_Cylinder.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Analytical_Shape\Grendgine_Collada_Plane.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Analytical_Shape\Grendgine_Collada_Shape.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Analytical_Shape\Grendgine_Collada_Sphere.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Custom_Types\Grendgine_Collada_Constraint_Limits.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Custom_Types\Grendgine_Collada_Constraint_Limit_Detail.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Custom_Types\Grendgine_Collada_Constraint_Spring.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Custom_Types\Grendgine_Collada_Constraint_Spring_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Custom_Types\Grendgine_Collada_Mass_Frame.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Material\Grendgine_Collada_Instance_Physics_Material.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Material\Grendgine_Collada_Library_Physics_Materials.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Material\Grendgine_Collada_Physics_Material.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Model\Grendgine_Collada_Attachment.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Model\Grendgine_Collada_Instance_Physics_Model.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Model\Grendgine_Collada_Instance_Rigid_Body.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Model\Grendgine_Collada_Instance_Rigid_Constraint.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Model\Grendgine_Collada_Library_Physics_Models.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Model\Grendgine_Collada_Physics_Model.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Model\Grendgine_Collada_Ref_Attachment.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Model\Grendgine_Collada_Rigid_Body.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Model\Grendgine_Collada_Rigid_Constraint.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Scene\Grendgine_Collada_Force_Field.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Scene\Grendgine_Collada_Instance_Force_Field.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Scene\Grendgine_Collada_Instance_Physics_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Scene\Grendgine_Collada_Library_Force_Fields.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Scene\Grendgine_Collada_Library_Physics_Scenes.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Physics_Scene\Grendgine_Collada_Physics_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Technique_Common\Grendgine_Collada_Technique_Common_Instance_Rigid_Body.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Technique_Common\Grendgine_Collada_Technique_Common_Physics_Material.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Technique_Common\Grendgine_Collada_Technique_Common_Physics_Scene.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Technique_Common\Grendgine_Collada_Technique_Common_Rigid_Body.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Collada_Physics\Technique_Common\Grendgine_Collada_Technique_Common_Rigid_Constraint.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Alpha_Operator.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Argument_Alpha_Operand.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Argument_RGB_Operand.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Argument_Source.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Face.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Format_Hint_Channels.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Format_Hint_Precision.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Format_Hint_Range.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_FX_Opaque_Channel.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_FX_Sampler_Common_Filter_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_FX_Sampler_Common_Wrap_Mode.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Geographic_Location_Altitude_Mode.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Input_Semantic.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Modifier_Value.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Node_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_RGB_Operator.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Sampler_Behavior.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_Shader_Stage.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Enums\Grendgine_Collada_TexEnv_Operator.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Grendgine_Collada.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_Bool_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_Common_Bool_Or_Param_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_Common_Float2_Or_Param_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_Common_Float_Or_Param_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_Common_Int_Or_Param_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_Common_Param_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_Common_SIDREF_Or_Param_Type.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_Float_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_Int_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_SID_Bool.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_SID_Float.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_SID_Float_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_SID_Int_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_SID_Name_Float.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_SID_Name_String.cs" />
+    <Compile Include="Asset\FileTypes\Collada\Types\Grendgine_Collada_String_Array_String.cs" />
+    <Compile Include="Asset\FileTypes\GCMDS.cs" />
+    <Compile Include="Asset\FileTypes\LODMesh.cs" />
+    <Compile Include="Asset\FileTypes\NMesh.cs" />
+    <Compile Include="Asset\FileTypes\OctreeScene.cs" />
+    <Compile Include="Asset\FileTypes\SkeletonKeyData.cs" />
+    <Compile Include="Asset\ModelPart.cs" />
+    <Compile Include="Asset\SceneModel.cs" />
+    <Compile Include="AsyncLoader.cs" />
+    <Compile Include="BinaryTools.cs" />
+    <Compile Include="CryptoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CryptoPanel.designer.cs">
+      <DependentUpon>CryptoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\MatrixEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\MatrixEditor.Designer.cs">
+      <DependentUpon>MatrixEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\NatureObjectEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\NatureObjectEditor.Designer.cs">
+      <DependentUpon>NatureObjectEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\TilePosEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\TilePosEditor.Designer.cs">
+      <DependentUpon>TilePosEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\TilePosEditorObj.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Editors\TileSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\TileSelector.Designer.cs">
+      <DependentUpon>TileSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extenders.cs" />
+    <Compile Include="HeightmapConverters\Base.cs" />
+    <Compile Include="HeightmapConverters\ColorBitmap.cs" />
+    <Compile Include="HeightmapConverters\ColorBitmap2.cs" />
+    <Compile Include="HeightmapConverters\GreyBitmap.cs" />
+    <Compile Include="HeightmapConverters\FloatArray.cs" />
+    <Compile Include="LogDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogDetailView.designer.cs">
+      <DependentUpon>LogDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelBrowser.Designer.cs">
+      <DependentUpon>ModelBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewObject.Designer.cs">
+      <DependentUpon>NewObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ObjectSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectSelector.Designer.cs">
+      <DependentUpon>ObjectSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rMapForm.Designer.cs">
+      <DependentUpon>rMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\IDrop.cs" />
+    <Compile Include="Tao\DDSLoader.cs" />
+    <Compile Include="Zalla\Effect.cs" />
+    <Compile Include="Zalla\Fallmap.cs" />
+    <Compile Include="Zalla\FallmapObj.cs" />
+    <Compile Include="Zalla\FieldObject.cs" />
+    <Compile Include="Zalla\GemData.cs" />
+    <Compile Include="Zalla\HeightTable.cs" />
+    <Compile Include="Zalla\House.cs" />
+    <Compile Include="Zalla\ISceneLoader.cs" />
+    <Compile Include="Zalla\NatureObject.cs" />
+    <Compile Include="Zalla\ObjectGroup.cs" />
+    <Compile Include="Zalla\SavedLight.cs" />
+    <Compile Include="Zalla\SavedObject.cs" />
+    <Compile Include="Zalla\Scene.cs" />
+    <Compile Include="Zalla\SceneObject.cs" />
+    <Compile Include="Zalla\SectorLight.cs" />
+    <Compile Include="Zalla\TileObject.cs" />
+    <Compile Include="Zalla\TileTexture.cs" />
+    <Compile Include="Zalla\WaterData.cs" />
+    <Compile Include="Zalla\WorldMatrixObject.cs" />
+    <Compile Include="Security\Checkin.cs" />
+    <Compile Include="Security\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\LoginError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\LoginError.Designer.cs">
+      <DependentUpon>LoginError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="VirtualMachine.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryptoPanel.resx">
+      <DependentUpon>CryptoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\MatrixEditor.resx">
+      <DependentUpon>MatrixEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\NatureObjectEditor.resx">
+      <DependentUpon>NatureObjectEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\TilePosEditor.resx">
+      <DependentUpon>TilePosEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\TileSelector.resx">
+      <DependentUpon>TileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogDetailView.resx">
+      <DependentUpon>LogDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelBrowser.resx">
+      <DependentUpon>ModelBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewObject.resx">
+      <DependentUpon>NewObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectSelector.resx">
+      <DependentUpon>ObjectSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rMapForm.resx">
+      <DependentUpon>rMapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\ScenePanel.resx">
+      <DependentUpon>ScenePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Security\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\LoginError.resx">
+      <DependentUpon>LoginError.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Editors\ScenePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\ScenePanel.Designer.cs">
+      <DependentUpon>ScenePanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Viewer\Viewer.csproj">
+      <Project>{B6090A65-4EC7-476B-B0CD-2E115BD21E38}</Project>
+      <Name>Viewer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Classic.ico" />
+    <None Include="Resources\CD-RW.ico" />
+    <None Include="Resources\CD-R.ico" />
+    <None Include="Resources\CD.ico" />
+    <None Include="Resources\Burn.ico" />
+    <None Include="Resources\Applications.ico" />
+    <None Include="Resources\Applications Folder.ico" />
+    <None Include="Resources\AFP.ico" />
+    <None Include="Resources\hyljatud_jpg.img" />
+    <None Include="Resources\Users.ico" />
+    <None Include="Resources\USB HD.ico" />
+    <None Include="Resources\Unknown.ico" />
+    <None Include="Resources\Trash Full.ico" />
+    <None Include="Resources\Trash Empty.ico" />
+    <None Include="Resources\Text.ico" />
+    <None Include="Resources\System.ico" />
+    <None Include="Resources\Sound.ico" />
+    <None Include="Resources\Sites.ico" />
+    <None Include="Resources\Scratch Disk.ico" />
+    <None Include="Resources\Removable.ico" />
+    <None Include="Resources\Public.ico" />
+    <None Include="Resources\Public Folder.ico" />
+    <None Include="Resources\Private.ico" />
+    <None Include="Resources\Pictures.ico" />
+    <None Include="Resources\Picture.ico" />
+    <None Include="Resources\News.ico" />
+    <None Include="Resources\New Pictures.ico" />
+    <None Include="Resources\New Folder.ico" />
+    <None Include="Resources\Network.ico" />
+    <None Include="Resources\Music.ico" />
+    <None Include="Resources\Music Folder.ico" />
+    <None Include="Resources\Movies.ico" />
+    <None Include="Resources\Movies Folder.ico" />
+    <None Include="Resources\MAILTO.ico" />
+    <None Include="Resources\Library.ico" />
+    <None Include="Resources\Internal.ico" />
+    <None Include="Resources\iDisk.ico" />
+    <None Include="Resources\HTTP.ico" />
+    <None Include="Resources\Home.ico" />
+    <None Include="Resources\Get Info B.ico" />
+    <None Include="Resources\Generic.ico" />
+    <None Include="Resources\Generic Folder.ico" />
+    <None Include="Resources\FTP.ico" />
+    <None Include="Resources\Firewire HD.ico" />
+    <None Include="Resources\Finder.ico" />
+    <None Include="Resources\Find.ico" />
+    <None Include="Resources\FILE.ico" />
+    <None Include="Resources\File Server.ico" />
+    <None Include="Resources\Favourites.ico" />
+    <None Include="Resources\Externa.ico" />
+    <None Include="Resources\Eject.ico" />
+    <None Include="Resources\DVD-RW.ico" />
+    <None Include="Resources\DVD-RAM.ico" />
+    <None Include="Resources\DVD-R.ico" />
+    <None Include="Resources\DVD+RW.ico" />
+    <None Include="Resources\DVD+R.ico" />
+    <None Include="Resources\DVD.ico" />
+    <None Include="Resources\Drop Box.ico" />
+    <None Include="Resources\Documents.ico" />
+    <None Include="Resources\Documents Folder.ico" />
+    <None Include="Resources\Disconnected.ico" />
+    <None Include="Resources\Developer.ico" />
+    <None Include="Resources\Desktop.ico" />
+    <None Include="Resources\Delete.ico" />
+    <None Include="Resources\Customise.ico" />
+    <None Include="Resources\Connect.ico" />
+    <None Include="Resources\Computer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-blue-rounded-right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-blue-rounded-down.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-blue-rounded-left.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-blue-rounded-up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DevIL.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hyljatud.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy E:\myProj\VS2k10\security\Drop\bin\Release\hyljatud_jpg.img E:\myProj\VS2k10\rMap\rMap\Resources
+copy E:\myProj\VS2k10\security\Drop\IDrop.cs E:\myProj\VS2k10\rMap\rMap\Security</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
