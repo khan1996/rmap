@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Globalization;
 
-namespace Zalla3dScene
+namespace rylModel
 {
     public static class Extenders
     {
@@ -55,16 +55,13 @@ namespace Zalla3dScene
         /// <param name="length">Length on how much to allocate</param>
         public static void Write(this System.IO.BinaryWriter writer, string value, int length)
         {
-            if (string.IsNullOrEmpty(value))
-                writer.WriteZeros(length);
-            else
-                for (int i = 0; i < length; i++)
-                {
-                    if (i < value.Length)
-                        writer.Write(value[i]);
-                    else
-                        writer.Write((byte)0x00);
-                }
+            for (int i = 0; i < length; i++)
+            {
+                if (i < value.Length)
+                    writer.Write(value[i]);
+                else
+                    writer.Write((byte)0x00);
+            }
         }
 
         /// <summary>
@@ -178,18 +175,6 @@ namespace Zalla3dScene
                 throw new ArgumentException("Unknown string");
         }
 
-        public static byte[] ToByteArray(this string str)
-        {
-            if (str == null)
-                throw new ArgumentNullException("str");
-
-            byte[] arr = new byte[str.Length];
-            for (int i = 0; i < str.Length; i++)
-                arr[i] = (byte)(int)str[i];
-
-            return arr;
-        }
-
         /// <summary>
         /// Inverts a integer like: AABBCCDD -> DDCCBBAA
         /// </summary>
@@ -216,6 +201,37 @@ namespace Zalla3dScene
                     return false;
 
             return true;
+        }
+
+        public static bool StartsWith(this byte[] data, string with)
+        {
+            if (data.Length < with.Length)
+                return false;
+
+            for (int i = 0; i < with.Length; i++)
+            {
+                if (data[i] != (byte)with[i])
+                    return false;
+            }
+            return true;
+        }
+
+        public static string Substring(this byte[] data, int from, int len = -1)
+        {
+            if (data.Length < from)
+                return "";
+
+            if (len < 0)
+                len = data.Length - from;
+
+            len += from;
+
+            string ret = "";
+            for (int i = from; i < len; i++)
+            {
+                ret += (char)data[i];
+            }
+            return ret;
         }
     }
 }
